@@ -8,6 +8,6 @@ phases:
       commands:
         - mkdir build-output
         - cp -R folder/myfile.js node_modules/ build-output
-  artifacts:
-    files:
-      - build-output/**/*
+artifacts:
+  files:
+    - build-output/**/*
