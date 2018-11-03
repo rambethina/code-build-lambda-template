@@ -6,5 +6,4 @@ phases:
       - npm install
   build:
     commands:
-      - npm run-script lint
       - npm test
