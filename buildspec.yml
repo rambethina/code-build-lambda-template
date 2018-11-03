@@ -1,6 +1,13 @@
 version: 0.2
 
 phases:
-  install:
+  build:
     commands:
       - npm install
+  post_build:
+      commands:
+        - mkdir build-output
+        - cp -R folder/myfile.js node_modules/ build-output
+  artifacts:
+    files:
+      - build-output/**/*
